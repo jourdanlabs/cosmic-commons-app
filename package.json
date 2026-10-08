@@ -1,0 +1,16 @@
+{
+  "name": "cosmic-commons-application",
+  "version": "1.0.1",
+  "description": "The complete local COMMONS application: explicit evidence, guided reasoning and replayable decisions.",
+  "type": "module",
+  "license": "Apache-2.0",
+  "engines": { "node": "24.19.0" },
+  "scripts": {
+    "start": "node server.mjs",
+    "doctor": "node scripts/doctor.mjs",
+    "test": "node --test tests/*.test.mjs",
+    "prove:engine": "node vendor/commons/bin/cosmic.mjs prove",
+    "verify:engine": "node scripts/verify-engine.mjs",
+    "build": "node scripts/build.mjs"
+  }
+}
