@@ -1,6 +1,6 @@
 # Application implementation contract
 
-Node 24.19.0, native node:sqlite, no runtime npm dependencies. Browser uses ES modules and guided DOM forms; maintain current COMMONS web look. This keeps application operation Node-only. The vendor engine files are immutable. The application server, engine adapter and worker, package scripts, storage, and browser forms are separate from the original engine implementation.
+Node `>=24.15 <25`, native node:sqlite, no runtime npm dependencies. Browser uses ES modules and guided DOM forms; maintain current COMMONS web look. This keeps application operation Node-only. The vendor engine files are immutable. The application server, engine adapter and worker, package scripts, storage, and browser forms are separate from the original engine implementation.
 
 API prefix /api. JSON response object, errors {error,code}; errors HTTP 400/409/413/403 as applicable. api(path, body?, options?) frontend helper supplied by shell: GET when body absent; POST with JSON.stringify(body) unless options.raw, then text. csrf x-commons-token from GET /api/session {token}; cookie session from same endpoint. No request.json; strict parsing on server. Number/value helper POST /api/value {type:'number'|'boolean'|'null'|'json'|'string',text} returns {value}; server parses raw text through parseStrictJson before browser retains typed value. Never parseFloat/Number on numeric form text.
 

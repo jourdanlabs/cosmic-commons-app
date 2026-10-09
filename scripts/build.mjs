@@ -4,7 +4,8 @@ import { readdirSync, existsSync } from 'node:fs';
 import { spawnSync } from 'node:child_process';
 import path from 'node:path';
 import { ROOT, assertEngine } from '../engine/integrity.mjs';
-if(process.versions.node!=='24.19.0') throw new Error('Node 24.19.0 required');
+import { assertSupportedLaunchRuntime } from './supported-runtime.mjs';
+assertSupportedLaunchRuntime();
 assertEngine();
 const files=['server.mjs'];
 for(const dir of ['app','engine','web','scripts']) for(const file of readdirSync(path.join(ROOT,dir))) {

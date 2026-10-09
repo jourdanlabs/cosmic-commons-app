@@ -11,7 +11,7 @@ import sys
 import zipfile
 
 root = Path(__file__).resolve().parents[1]
-destination = Path(sys.argv[1]).resolve() if len(sys.argv) > 1 else root.parent / 'COMMONS-App-v1.0.1.zip'
+destination = Path(sys.argv[1]).resolve() if len(sys.argv) > 1 else root.parent / 'COMMONS-App-v1.0.2.zip'
 if destination == root or root in destination.parents:
     raise SystemExit('Output must be outside the delivered source tree')
 paths = []
@@ -30,7 +30,7 @@ manifest = ''.join(f'{hashlib.sha256(p.read_bytes()).hexdigest()}  {p.relative_t
 (root / 'CHECKSUMS-APP.sha256').write_text(manifest, encoding='utf-8')
 paths.append(root / 'CHECKSUMS-APP.sha256')
 destination.parent.mkdir(parents=True, exist_ok=True)
-prefix = 'COMMONS-App-v1.0.1/'
+prefix = 'COMMONS-App-v1.0.2/'
 with zipfile.ZipFile(destination, 'w', zipfile.ZIP_DEFLATED, compresslevel=9) as archive:
     for item in sorted(paths, key=lambda p: p.relative_to(root).as_posix()):
         info = zipfile.ZipInfo(prefix + item.relative_to(root).as_posix(), (2026, 10, 8, 0, 0, 0))

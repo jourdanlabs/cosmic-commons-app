@@ -11,8 +11,9 @@ import {parseStrictJson} from './vendor/commons/dist/src/index.js';
 import {assertEngine,ROOT} from './engine/integrity.mjs';
 import * as adapter from './engine/adapter.mjs';
 import {encodeBundle,decodeBundle} from './app/bundle.mjs';
+import {assertSupportedLaunchRuntime,supportedLaunchRangeLabel} from './scripts/supported-runtime.mjs';
 
-const VERSION='1.0.1';
+const VERSION='1.0.2';
 const defaultData=()=>process.env.COMMONS_DATA_DIR||path.join(os.homedir(),process.platform==='darwin'?'Library/Application Support/COMMONS':'.local/share/commons');
 const secretEqual=(a,b)=>typeof a==='string'&&a.length===b.length&&timingSafeEqual(Buffer.from(a),Buffer.from(b));
 const decode=b=>new TextDecoder('utf-8',{fatal:true,ignoreBOM:true}).decode(b);
@@ -21,7 +22,8 @@ async function body(req,max=2000000){const chunks=[];let size=0;for await(const 
 async function json(req){return parseStrictJson(decode(await body(req)));}
 function receiptTexts(envelope){return [...new Set((envelope?.records??[]).filter(r=>r.type==='run').map(r=>r.data?.receiptText))];}
 export async function createApplication({dataDir=defaultData(),port=Number(process.env.PORT||4320)}={}){
-  if(process.versions.node!=='24.19.0')throw new Error('COMMONS requires Node 24.19.0. Current Node: '+process.versions.node);
+  try { assertSupportedLaunchRuntime(); }
+  catch (error) { throw new Error(error instanceof Error ? error.message : String(error)); }
   assertEngine();
   if(existsSync(dataDir)&&lstatSync(dataDir).isSymbolicLink())throw new Error('COMMONS_DATA_DIR may not be a symlink');
   mkdirSync(dataDir,{recursive:true,mode:0o700});dataDir=realpathSync(dataDir);
@@ -103,5 +105,5 @@ export async function createApplication({dataDir=defaultData(),port=Number(proce
   return {server,url,store,close:async()=>{server.closeAllConnections();await new Promise(resolve=>server.close(resolve));store.close();}};
 }
 if(process.argv[1]&&fileURLToPath(import.meta.url)===path.resolve(process.argv[1])){
-  createApplication().then(app=>{console.log('\nCOSMIC COMMONS 1.0.1\nReason. Decide. Replay.\n\nOpen '+app.url+'\nYour work stays on this computer.\nCtrl+C stops the application.\n');let stopping=false;for(const signal of ['SIGINT','SIGTERM'])process.on(signal,async()=>{if(stopping)return;stopping=true;await app.close();process.exit(0);});}).catch(e=>{console.error(e.message);process.exitCode=1;});
+  createApplication().then(app=>{console.log('\nCOSMIC COMMONS 1.0.2\nReason. Decide. Replay.\n\nOpen '+app.url+'\nYour work stays on this computer.\nCtrl+C stops the application.\n');let stopping=false;for(const signal of ['SIGINT','SIGTERM'])process.on(signal,async()=>{if(stopping)return;stopping=true;await app.close();process.exit(0);});}).catch(e=>{console.error(e.message);process.exitCode=1;});
 }

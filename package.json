@@ -1,10 +1,10 @@
 {
   "name": "cosmic-commons-application",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "The complete local COMMONS application: explicit evidence, guided reasoning and replayable decisions.",
   "type": "module",
   "license": "Apache-2.0",
-  "engines": { "node": "24.19.0" },
+  "engines": { "node": ">=24.15 <25" },
   "scripts": {
     "start": "node server.mjs",
     "doctor": "node scripts/doctor.mjs",

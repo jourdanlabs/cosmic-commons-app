@@ -2,7 +2,7 @@
 
 Created by Leland Jourdan II / C&L Strategy · © 2026
 
-COMMONS App **1.0.1** is a complete local reasoning workspace around the public COMMONS **0.2.2** engines. Create your own cases in guided forms, keep explicit evidence and assumptions, run decisions, retain exact receipts, and recover your workspace from backups. The original cream, violet, and ink interface remains.
+COMMONS App **1.0.2** is a complete local reasoning workspace around the public COMMONS **0.2.2** engines. This repository vendors that frozen **0.2.2** engine only; it does not bind M1 stage packages. Create your own cases in guided forms, keep explicit evidence and assumptions, run decisions, retain exact receipts, and recover your workspace from backups. The original cream, violet, and ink interface remains.
 
 ## Included engines
 
@@ -14,7 +14,7 @@ This is the selected public COMMONS engine set. It does not include the full pri
 
 ## Start
 
-Install **Node 24.19.0**, extract this complete folder, and run these commands inside it:
+Use **Node `>=24.15 <25`** on **darwin arm64** (tested on **24.15.0**, **24.18.0**, and **24.19.0**). Extract this complete folder and run these commands inside it:
 
 ```sh
 node scripts/doctor.mjs

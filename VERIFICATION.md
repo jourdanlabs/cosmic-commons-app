@@ -1,6 +1,6 @@
-# Verifying COMMONS Application 1.0.1
+# Verifying COMMONS Application 1.0.2
 
-The commands below let you check the delivered file set, original engine bytes, executable tests, and application syntax yourself. Run them with **Node 24.19.0** from the application directory. No runtime dependency installation is required.
+The commands below let you check the delivered file set, original engine bytes, executable tests, and application syntax yourself. Run them with **Node `>=24.15 <25`** from the application directory. No runtime dependency installation is required.
 
 ## Package and engine integrity
 

@@ -5,7 +5,7 @@ This distribution contains selected Commons source derived from the COSMIC
 Discovery snapshot and later Commons work. Source origins and modifications
 are recorded in vendor/commons/provenance/RELEASE-SELECTION.json.
 
-COMMONS Application 1.0.1 adds a guided browser workspace, immutable local
+COMMONS Application 1.0.2 adds a guided browser workspace, immutable local
 case history, SQLite storage, attachments, templates, receipt workflows,
 and case/workspace recovery around the unchanged Commons 0.2.2 engine.
 The engine's original NOTICE is retained in vendor/commons/NOTICE.

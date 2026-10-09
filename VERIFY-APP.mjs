@@ -19,6 +19,7 @@ function walk(dir,prefix='') {
     if(e.isSymbolicLink()) throw new Error('Symlink refused: '+rel);
     if(e.isDirectory()) walk(p,rel+'/');
     else if(e.isFile()) {
+      if(e.name==='.DS_Store') continue;
       actual.add(rel);
       if(createHash('sha256').update(readFileSync(p)).digest('hex')!==expected.get(rel)) throw new Error('Hash mismatch: '+rel);
     } else throw new Error('Unsupported file: '+rel);

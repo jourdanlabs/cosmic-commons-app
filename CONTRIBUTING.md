@@ -1,6 +1,6 @@
 # Contributing
 
-Application improvements belong in `web/`, `app/`, the server, and application tests. Run the Node 24.19.0 checks in [VERIFICATION](VERIFICATION.md). Preserve truthful verdicts, raw receipt verification, optimistic revisions, saved observation immutability, and transactional restore.
+Application improvements belong in `web/`, `app/`, the server, and application tests. Run the Node `>=24.15 <25` checks in [VERIFICATION](VERIFICATION.md). Preserve truthful verdicts, raw receipt verification, optimistic revisions, saved observation immutability, and transactional restore.
 
 Treat `vendor/commons/` and the original engine archive as immutable pinned dependencies. An engine change requires a separate upstream release and a newly pinned archive; do not patch the retained engine in place or duplicate its calculations in the application. Keep application and engine versions distinct.
 
@@ -17,4 +17,4 @@ git add .
 git add -f -- vendor/commons/dist
 ```
 
-Inspect any other ignored shipped files before committing. The TypeScript source alone is not the runnable distribution. Verify a fresh clone with `node VERIFY-APP.mjs` and `node scripts/doctor.mjs`; both must succeed with Node 24.19.0 before treating that repository as complete.
+Inspect any other ignored shipped files before committing. The TypeScript source alone is not the runnable distribution. Verify a fresh clone with `node VERIFY-APP.mjs` and `node scripts/doctor.mjs`; both must succeed with Node `>=24.15 <25` before treating that repository as complete.

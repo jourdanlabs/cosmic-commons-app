@@ -1,7 +1,9 @@
 // Copyright 2026 Leland Jourdan II / C&L Strategy · Apache-2.0
 import { assertEngine } from '../engine/integrity.mjs';
-if(process.versions.node!=='24.19.0') {
-  console.error(`COMMONS requires Node 24.19.0. You have ${process.versions.node}.`);
+import { assertSupportedLaunchRuntime, supportedLaunchRangeLabel } from './supported-runtime.mjs';
+try { assertSupportedLaunchRuntime(); }
+catch (error) {
+  console.error(error instanceof Error ? error.message : String(error));
   process.exit(1);
 }
 const {DatabaseSync}=process.getBuiltinModule('node:sqlite');

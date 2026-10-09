@@ -1,6 +1,6 @@
 # Frozen engine boundary
 
-COMMONS App 1.0.1 includes and executes the existing compiled modular COMMONS 0.2.2 engine in a child process. The actual TypeScript source is in `vendor/commons/src/`; the executable JavaScript is in `vendor/commons/dist/src/`. Browser forms, storage, packaging, and workflow management live outside that engine. Engine implementation changes are not part of this application.
+COMMONS App 1.0.2 includes and executes the existing compiled modular COMMONS 0.2.2 engine in a child process. The actual TypeScript source is in `vendor/commons/src/`; the executable JavaScript is in `vendor/commons/dist/src/`. Browser forms, storage, packaging, and workflow management live outside that engine. Engine implementation changes are not part of this application.
 
 | Evidence | Value |
 | --- | --- |
