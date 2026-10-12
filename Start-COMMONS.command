@@ -1,5 +1,5 @@
 #!/bin/bash
-# Copyright 2026 Leland Jourdan II / C&L Strategy · Apache-2.0
+# Copyright 2026 Leland Jourdan II / JourdanLabs · Apache-2.0
 cd "$(dirname "$0")" || exit 1
 node scripts/doctor.mjs || exit 1
 (

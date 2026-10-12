@@ -1,4 +1,4 @@
-// Copyright 2026 Leland Jourdan II / C&L Strategy
+// Copyright 2026 Leland Jourdan II / JourdanLabs
 // SPDX-License-Identifier: Apache-2.0
 // Application helpers. The immutable engine owns all input parsing and computation.
 export function el(tag, attrs = {}, ...children) {

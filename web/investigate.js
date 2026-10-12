@@ -1,4 +1,4 @@
-// Copyright 2026 Leland Jourdan II / C&L Strategy
+// Copyright 2026 Leland Jourdan II / JourdanLabs
 // SPDX-License-Identifier: Apache-2.0
 // Guided application forms only. The unchanged COMMONS engine performs inference,
 // adequacy, experiment selection, budget accounting, and expected-loss decisions.

@@ -1,4 +1,4 @@
-// Copyright 2026 Leland Jourdan II / C&L Strategy
+// Copyright 2026 Leland Jourdan II / JourdanLabs
 // SPDX-License-Identifier: Apache-2.0
 // Optional production-browser gate. No browser dependency is required to start
 // COMMONS or run its ordinary native Node test suite.

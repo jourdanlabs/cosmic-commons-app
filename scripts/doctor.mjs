@@ -1,4 +1,4 @@
-// Copyright 2026 Leland Jourdan II / C&L Strategy · Apache-2.0
+// Copyright 2026 Leland Jourdan II / JourdanLabs · Apache-2.0
 import { assertEngine } from '../engine/integrity.mjs';
 import { assertSupportedLaunchRuntime, supportedLaunchRangeLabel } from './supported-runtime.mjs';
 try { assertSupportedLaunchRuntime(); }

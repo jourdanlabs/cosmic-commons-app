@@ -1,4 +1,4 @@
-// Copyright 2026 Leland Jourdan II / C&L Strategy
+// Copyright 2026 Leland Jourdan II / JourdanLabs
 // SPDX-License-Identifier: Apache-2.0
 // These tests exercise the shipped local server and its actual immutable engine
 // worker. They do not substitute a mock engine or copy verdict logic into tests.

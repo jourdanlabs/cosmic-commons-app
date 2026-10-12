@@ -1,6 +1,6 @@
 # COSMIC COMMONS — the application
 
-Created by Leland Jourdan II / C&L Strategy · © 2026
+Created by Leland Jourdan II / JourdanLabs · © 2026
 
 COMMONS App **1.0.2** is a complete local reasoning workspace around the public COMMONS **0.2.2** engines. This repository vendors that frozen **0.2.2** engine only; it does not bind M1 stage packages. Create your own cases in guided forms, keep explicit evidence and assumptions, run decisions, retain exact receipts, and recover your workspace from backups. The original cream, violet, and ink interface remains.
 
@@ -58,4 +58,4 @@ The optional browser workflow test is documented in VERIFICATION; its tools are 
 
 This distribution contains only the selected public COMMONS engine, not the full COSMIC system. It provides explicit, conditional calculations; it does not prove entered facts, perform real-world actions, or turn a hash into a signature. This is a local application; no public hosting, external intake connector, or remote service is included.
 
-Apache-2.0 applies; retain the supplied LICENSE, NOTICE, and relevant attribution as their terms require. The application displays **Leland Jourdan II / C&L Strategy** credit. The license does not require every downstream interface to display that footer. The original engine notices are unchanged. Read the actual license rather than assuming a stronger name-display condition.
+Apache-2.0 applies; retain the supplied LICENSE, NOTICE, and relevant attribution as their terms require. The application displays **Leland Jourdan II / JourdanLabs** credit. The license does not require every downstream interface to display that footer. The original engine notices are unchanged. Read the actual license rather than assuming a stronger name-display condition.

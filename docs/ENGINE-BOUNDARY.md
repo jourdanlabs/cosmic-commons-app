@@ -19,4 +19,4 @@ The selected public engines provide evidence policy, finite-hypothesis inference
 
 The worker imports `vendor/commons/dist/src/index.js` and calls the original `runRequest`, `verifyRunText`, and strict parser. The engine is a local dependency, not a remote service, placeholder, or code download performed at runtime.
 
-The application uses zero runtime npm dependencies: native DOM ES modules, Node HTTP, and Node SQLite. This implementation choice keeps the engine outside any application compilation pipeline. LICENSE and NOTICE remain intact, and the application retains **Leland Jourdan II / C&L Strategy** attribution. File hashes establish byte consistency; they do not sign the distribution or establish source truth.
+The application uses zero runtime npm dependencies: native DOM ES modules, Node HTTP, and Node SQLite. This implementation choice keeps the engine outside any application compilation pipeline. LICENSE and NOTICE remain intact, and the application retains **Leland Jourdan II / JourdanLabs** attribution. File hashes establish byte consistency; they do not sign the distribution or establish source truth.

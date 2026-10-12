@@ -1,4 +1,4 @@
-// Copyright 2026 Leland Jourdan II / C&L Strategy · Apache-2.0
+// Copyright 2026 Leland Jourdan II / JourdanLabs · Apache-2.0
 // A package manifest checks consistency; it is not a signature or trusted anchor.
 import { readFileSync, readdirSync } from 'node:fs';
 import { createHash } from 'node:crypto';

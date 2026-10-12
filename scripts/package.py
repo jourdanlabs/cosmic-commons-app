@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Package the local public source tree; no application or engine build occurs.
-Copyright 2026 Leland Jourdan II / C&L Strategy · Apache-2.0
+Copyright 2026 Leland Jourdan II / JourdanLabs · Apache-2.0
 """
 from pathlib import Path
 import hashlib

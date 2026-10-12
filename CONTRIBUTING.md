@@ -6,7 +6,7 @@ Treat `vendor/commons/` and the original engine archive as immutable pinned depe
 
 Run browser workflow tests for form or workflow changes, including keyboard use and a narrow viewport. Document commands and observed results accurately; do not describe unexecuted or failed checks as successful. Preserve the local-only operating scope unless a separate design explicitly changes it.
 
-Preserve LICENSE, NOTICE, and relevant attribution, including **Leland Jourdan II / C&L Strategy**, in accordance with the supplied Apache-2.0 terms.
+Preserve LICENSE, NOTICE, and relevant attribution, including **Leland Jourdan II / JourdanLabs**, in accordance with the supplied Apache-2.0 terms.
 
 ## Importing the complete distribution into Git
 

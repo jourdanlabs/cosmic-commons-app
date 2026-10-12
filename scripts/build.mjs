@@ -1,4 +1,4 @@
-// Copyright 2026 Leland Jourdan II / C&L Strategy · Apache-2.0
+// Copyright 2026 Leland Jourdan II / JourdanLabs · Apache-2.0
 // Native ES modules: validation only, never compile or bundle the frozen engine.
 import { readdirSync, existsSync } from 'node:fs';
 import { spawnSync } from 'node:child_process';

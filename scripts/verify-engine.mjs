@@ -1,4 +1,4 @@
-// Copyright 2026 Leland Jourdan II / C&L Strategy · Apache-2.0
+// Copyright 2026 Leland Jourdan II / JourdanLabs · Apache-2.0
 import { readFileSync } from 'node:fs';
 import path from 'node:path';
 import { ROOT, lock, assertEngine, bytesHash } from '../engine/integrity.mjs';
