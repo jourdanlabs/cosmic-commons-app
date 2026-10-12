@@ -1,4 +1,4 @@
-// Copyright 2026 Leland Jourdan II / C&L Strategy
+// Copyright 2026 Leland Jourdan II / JourdanLabs
 // SPDX-License-Identifier: Apache-2.0
 import assert from 'node:assert/strict';
 import { cpSync, mkdtempSync, readFileSync, writeFileSync, rmSync, appendFileSync, symlinkSync } from 'node:fs';

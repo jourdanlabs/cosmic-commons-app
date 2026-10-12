@@ -1,4 +1,4 @@
-// Copyright 2026 Leland Jourdan II / C&L Strategy
+// Copyright 2026 Leland Jourdan II / JourdanLabs
 // SPDX-License-Identifier: Apache-2.0
 // Integrity check only: a manifest is not a signature or an independent anchor.
 import { readFileSync, lstatSync, readdirSync } from 'node:fs';

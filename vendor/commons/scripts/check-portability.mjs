@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-// Copyright 2026 Leland Jourdan II / C&L Strategy
+// Copyright 2026 Leland Jourdan II / JourdanLabs
 // SPDX-License-Identifier: Apache-2.0
 import { cpSync, existsSync, mkdirSync, mkdtempSync, readFileSync, readdirSync, rmSync, writeFileSync } from 'node:fs';
 import { tmpdir } from 'node:os';

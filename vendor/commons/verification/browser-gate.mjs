@@ -1,4 +1,4 @@
-// Copyright 2026 Leland Jourdan II / C&L Strategy
+// Copyright 2026 Leland Jourdan II / JourdanLabs
 // SPDX-License-Identifier: Apache-2.0
 // Combined B1/B2/B5/B6 browser gate against the shipped JavaScript build.
 // Run from package root with external Playwright/Chromium environment variables

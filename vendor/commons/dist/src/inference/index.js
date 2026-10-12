@@ -1,4 +1,4 @@
-// Copyright 2026 Leland Jourdan II / C&L Strategy
+// Copyright 2026 Leland Jourdan II / JourdanLabs
 // SPDX-License-Identifier: Apache-2.0
 export * from "./types.js";
 export { DiscoverySession, entropy, canonicalJSON, hashJSON, replaySession, validateDiscoveryIdentifier, DISCOVERY_MAX_IDENTIFIER_LENGTH } from "./session.js";

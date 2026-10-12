@@ -1,4 +1,4 @@
-// Copyright 2026 Leland Jourdan II / C&L Strategy
+// Copyright 2026 Leland Jourdan II / JourdanLabs
 // SPDX-License-Identifier: Apache-2.0
 import { policyImplementation } from "./runtime.js";
 import { canonicalize, jsonClone, sha256, timestamp, assertReceiptTextLimit } from "./canonical.js";

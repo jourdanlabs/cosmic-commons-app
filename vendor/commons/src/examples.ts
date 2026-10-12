@@ -1,4 +1,4 @@
-// Copyright 2026 Leland Jourdan II / C&L Strategy
+// Copyright 2026 Leland Jourdan II / JourdanLabs
 // SPDX-License-Identifier: Apache-2.0
 import { readFileSync, readdirSync } from 'node:fs';
 import { parseStrictJson } from './strict-json.ts';

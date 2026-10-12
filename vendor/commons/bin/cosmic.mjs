@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-// Copyright 2026 Leland Jourdan II / C&L Strategy
+// Copyright 2026 Leland Jourdan II / JourdanLabs
 // SPDX-License-Identifier: Apache-2.0
 if (Number(process.versions.node.split('.')[0]) < 20) {
   process.stderr.write(`COSMIC Commons requires Node 20 or newer; found ${process.versions.node}.\n`);

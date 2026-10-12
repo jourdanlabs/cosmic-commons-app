@@ -1,4 +1,4 @@
-// Copyright 2026 Leland Jourdan II / C&L Strategy
+// Copyright 2026 Leland Jourdan II / JourdanLabs
 // SPDX-License-Identifier: Apache-2.0
 // Optional browser QA; run from the package root. Browser tooling is external.
 // COMMONS_PLAYWRIGHT_MODULE, COMMONS_CHROMIUM_MODULE and

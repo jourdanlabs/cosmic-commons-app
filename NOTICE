@@ -7,8 +7,9 @@ are recorded in vendor/commons/provenance/RELEASE-SELECTION.json.
 
 COMMONS Application 1.0.2 adds a guided browser workspace, immutable local
 case history, SQLite storage, attachments, templates, receipt workflows,
-and case/workspace recovery around the unchanged Commons 0.2.2 engine.
-The engine's original NOTICE is retained in vendor/commons/NOTICE.
+and case/workspace recovery around the Commons 0.2.2 engine.
+The engine copy's NOTICE in vendor/commons/NOTICE names JourdanLabs.
+The zip archive was not rewritten.
 
 Apache License, Version 2.0: see LICENSE. Third-party build dependencies
 retain their respective licenses; this notice does not override their terms.

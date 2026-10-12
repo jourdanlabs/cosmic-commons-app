@@ -1,4 +1,4 @@
-// Copyright 2026 Leland Jourdan II / C&L Strategy
+// Copyright 2026 Leland Jourdan II / JourdanLabs
 // SPDX-License-Identifier: Apache-2.0
 // Optional QA tool; runtime Commons has zero npm dependencies.
 // Run from Commons root with COMMONS_PLAYWRIGHT_MODULE, COMMONS_CHROMIUM_MODULE,

@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-// Copyright 2026 Leland Jourdan II / C&L Strategy
+// Copyright 2026 Leland Jourdan II / JourdanLabs
 // SPDX-License-Identifier: Apache-2.0
 import { readdirSync, readFileSync, writeFileSync, lstatSync } from 'node:fs';
 import { dirname, join, relative, resolve } from 'node:path';
@@ -51,7 +51,7 @@ const output = await build({absWorkingDir:root, entryPoints:['standalone/entry.m
   // ESM is inherently strict; the source build remains governed by strict tsc.
   platform:'node', format:'esm', target:['node20'], tsconfigRaw:{compilerOptions:{}}, write:false, outfile:'cosmic-commons.mjs',
   minify:false, charset:'utf8', legalComments:'inline', sourcemap:false, metafile:true,
-  banner:{js:'#!/usr/bin/env node\n// Copyright 2026 Leland Jourdan II / C&L Strategy\n// SPDX-License-Identifier: Apache-2.0\n// Rebuild from shipped inputs: node scripts/build-bundle.mjs [--check]'}, plugins:[plugin]});
+  banner:{js:'#!/usr/bin/env node\n// Copyright 2026 Leland Jourdan II / JourdanLabs\n// SPDX-License-Identifier: Apache-2.0\n// Rebuild from shipped inputs: node scripts/build-bundle.mjs [--check]'}, plugins:[plugin]});
 if (output.outputFiles.length !== 1) throw new Error('Standalone build must produce exactly one file');
 const bytes = Buffer.from(output.outputFiles[0].contents);
 // All executable imports must be Node built-ins; no external package or assets.
